@@ -1,0 +1,97 @@
+@font-face {
+    font-family: "Cooper Black";
+    src: url("/fonts/cooper-black.otf");
+  }
+body.pozadi{
+    background-color: rgba(0, 0, 0, 0.808);
+}
+h1{
+    color: rgb(226, 222, 219);
+    font-family: "Cooper Black", serif;
+}
+button{
+   font-size: 30px;
+   
+   box-shadow: 0px 10px #464137;
+   
+}
+header{
+    background-color: rgb(83, 83, 192);
+}
+.zaobleni{
+    border-radius: 20px;
+    border: #395e72 4px solid;
+    background-color: rgb(0, 0, 0);
+}
+.zaobleni1{
+    border-radius: 50px;
+    border: #afb8b1 5px solid;
+}
+.zaobleni2{
+    border-radius: 1000px;
+    border: #000000 5px solid;
+    background-color: rgb(222, 235, 44);
+    width: 50%;
+    height: 130px;
+}
+.bruh{
+    
+    display: block;
+  margin-top: 0.5em;
+  margin-bottom: 1.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 12px;
+}
+.zaobleni3{
+    border-radius: 100px;
+    border: #000000 3px solid;
+    background-color: rgb(235, 44, 44);
+    padding-top: 20px;
+    
+}
+.zaobleni4{
+    border-radius: 50px;
+    border: #d9e4db 5px solid;
+
+}
+.outerDiv {
+    background-color: #006699;
+    color: #fff;
+    
+    height: 400px;
+    width: 600px;
+    margin: 0px auto;
+    padding: 5px;
+    border-radius: 50px;
+    border: #d9e4db 5px solid;
+}
+.leftDiv {
+    background-color: #efefef;
+    color: #000;
+    height: auto;
+    width: 48%;
+    float: left;
+    border-radius: 50px;
+    border: #d9e4db 5px solid;
+}
+.rightDiv {
+    background-color: #efefef;
+    color: #000;
+    height: auto;
+    width: 48%;
+    float: right;
+    border-radius: 50px;
+    border: #d9e4db 5px solid;
+    
+}
+.rightDiv1 {
+    background-color: #efefef;
+    color: #000;
+    border-radius: 50px;
+    width: 48%;
+    margin: auto;
+    border: #d9e4db 5px solid;
+    
+}
