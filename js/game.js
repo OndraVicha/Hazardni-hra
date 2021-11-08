@@ -127,13 +127,7 @@ function obnovitstat() {
     statistiky.innerHTML += `<p>Počet pokusů: ${pokusy}</p>`
     statistiky.innerHTML += `<p>Výhry: ${vyhry}</p>`
 }
-function reset() {
-    rolling = 0
-    if(penize == 0){
-        buzzer.play();
-        
-    }
-}
+
 function vyhra() {
     if (cube3 == cube6 && cube1 == cube4 && cube2 == cube5){
         vyhry++;
