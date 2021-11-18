@@ -133,25 +133,25 @@ function vyhra() {
         vyhry++;
         peníze += 10000;
         obnovitstat()
-        setTimeout(reset, 1000)
+        setTimeout(1000)
      }
     else if(cube1 == cube4 || cube2 == cube5 || cube3 == cube6){
     vyhry++;
     penize += 400;
     obnovitstat()
-    setTimeout(reset, 1000)
+    setTimeout(1000)
  }
  else if (cube1 == cube4 && cube2 == cube5 || cube2 == cube5 && cube3 == cube6 || cube3 == cube6 && cube1 == cube4){
     vyhry++;
     peníze += 1000;
     obnovitstat()
-    setTimeout(reset, 1000)
+    setTimeout(1000)
  }
 else if (cube1 == foto1 && cube2 == foto2 && cube3 == foto3 && cube4 == foto4 && cube5 == foto5 && cube6 == foto6 ){
     vyhry++;
     peníze += 100000;
     obnovitstat()
-    setTimeout(reset, 1000)
+    setTimeout(1000)
 }
  else{
     setTimeout(1000)
