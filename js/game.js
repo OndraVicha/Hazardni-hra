@@ -154,6 +154,6 @@ else if (cube1 == foto1 && cube2 == foto2 && cube3 == foto3 && cube4 == foto4 &&
     setTimeout(reset, 1000)
 }
  else{
-    setTimeout(reset, 1000)
+    setTimeout(1000)
  }
 }
