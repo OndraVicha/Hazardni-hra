@@ -19,7 +19,7 @@ document.getElementById('game').addEventListener('click', function () {
     pokusy ++;
     obnovitstat()
     rolling = 1;
-    
+    presss.play();
     foto1.style.borderColor = 'blue';
     foto2.style.borderColor = 'blue';
     foto3.style.borderColor = 'blue';
@@ -50,7 +50,7 @@ function hod1() {
     setTimeout(() => {
         clearInterval(timer1);
         foto1.style.borderColor = 'yellow'
-        
+        roll.play();
     }, (1) * 3000);
 }
 function rollone() {
@@ -62,7 +62,7 @@ function hod2() {
     setTimeout(() => {
         clearInterval(timer2);
         foto2.style.borderColor = 'yellow'
-        
+        roll.play();
     }, (1) * 7000);
 }
 function rolltwo() {
@@ -74,7 +74,7 @@ function hod3() {
     setTimeout(() => {
         clearInterval(timer3);
         foto3.style.borderColor = 'yellow'
-        
+        roll.play();
     }, (1) * 11000);
 }
 function rollthree() {
@@ -86,7 +86,7 @@ function hod4() {
     setTimeout(() => {
         clearInterval(timer4);
         foto4.style.borderColor = 'yellow'
-        
+        roll.play();
     }, (1) * 15000);
 }
 function rollfour() {
@@ -98,7 +98,7 @@ function hod5() {
     setTimeout(() => {
         clearInterval(timer5);
         foto5.style.borderColor = 'yellow'
-        
+        roll.play();
     }, (1) * 19000);
 }
 function rollfive() {
@@ -110,7 +110,7 @@ function hod6() {
     setTimeout(() => {
         clearInterval(timer6);
         foto6.style.borderColor = 'yellow'
-        
+        roll.play();
         vyhra()
     }, (1) * 23000);
 }
@@ -118,7 +118,7 @@ function rollsix() {
     cube6 = Math.ceil(Math.random() * 6)
     foto6.src = `./img/kostka${cube6}.png`;
     
-    
+  
 }
 const statistiky = document.getElementById('statistiky');
 function obnovitstat() {
