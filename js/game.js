@@ -118,7 +118,7 @@ function rollsix() {
     cube6 = Math.ceil(Math.random() * 6)
     foto6.src = `./img/kostka${cube6}.png`;
     
-  
+    
 }
 const statistiky = document.getElementById('statistiky');
 function obnovitstat() {
@@ -127,33 +127,39 @@ function obnovitstat() {
     statistiky.innerHTML += `<p>Počet pokusů: ${pokusy}</p>`
     statistiky.innerHTML += `<p>Výhry: ${vyhry}</p>`
 }
-
+function reset() {
+    rolling = 0
+    if(penize == 0){
+        buzzer.play();
+        
+    }
+}
 function vyhra() {
     if (cube3 == cube6 && cube1 == cube4 && cube2 == cube5){
         vyhry++;
         peníze += 10000;
         obnovitstat()
-        setTimeout(1000)
+        setTimeout(reset, 1000)
      }
     else if(cube1 == cube4 || cube2 == cube5 || cube3 == cube6){
     vyhry++;
     penize += 400;
     obnovitstat()
-    setTimeout(1000)
+    setTimeout(reset, 1000)
  }
  else if (cube1 == cube4 && cube2 == cube5 || cube2 == cube5 && cube3 == cube6 || cube3 == cube6 && cube1 == cube4){
     vyhry++;
     peníze += 1000;
     obnovitstat()
-    setTimeout(1000)
+    setTimeout(reset, 1000)
  }
 else if (cube1 == foto1 && cube2 == foto2 && cube3 == foto3 && cube4 == foto4 && cube5 == foto5 && cube6 == foto6 ){
     vyhry++;
     peníze += 100000;
     obnovitstat()
-    setTimeout(1000)
+    setTimeout(reset, 1000)
 }
  else{
-    setTimeout(1000)
+    setTimeout(reset, 1000)
  }
 }
